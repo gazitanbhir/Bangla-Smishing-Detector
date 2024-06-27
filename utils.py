@@ -10,7 +10,7 @@ model = BertForSequenceClassification.from_pretrained('model')
 tokenizer = BertTokenizer.from_pretrained('model')
 
 # Load the label encoder
-label_encoder = joblib.load('/home/hydra/Documents/Streamlit/smish/label_encoder.pkl')
+label_encoder = joblib.load('label_encoder.pkl')
 
 # Set the model to evaluation mode
 model.eval()
