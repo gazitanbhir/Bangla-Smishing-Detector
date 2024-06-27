@@ -6,8 +6,8 @@ from transformers import BertForSequenceClassification, BertTokenizer
 import joblib
 
 # Load the pre-trained model and tokenizer
-model = BertForSequenceClassification.from_pretrained('/home/hydra/Documents/Streamlit/smish/model')
-tokenizer = BertTokenizer.from_pretrained('/home/hydra/Documents/Streamlit/smish/model')
+model = BertForSequenceClassification.from_pretrained('model')
+tokenizer = BertTokenizer.from_pretrained('model')
 
 # Load the label encoder
 label_encoder = joblib.load('/home/hydra/Documents/Streamlit/smish/label_encoder.pkl')
